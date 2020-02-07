@@ -15,7 +15,7 @@ locals {
 
 resource "aws_instance" "example" {
 	ami = data.aws_ami.amazon_linux_latest.id
-	instance_type = "t2.small"
+	instance_type = "t2.micro"
 	tags = local.tags
 	volume_tags = local.tags
 }
